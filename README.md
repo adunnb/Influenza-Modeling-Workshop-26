@@ -90,8 +90,8 @@ See the notebooks in order for the full walkthrough.
 ## Quickstart
 
 ```bash
-git clone https://github.com/<your-username>/neural-ode-influenza.git
-cd neural-ode-influenza
+git clone https://github.com/adunnb/Influenza-Modeling-Workshop-26.git
+cd Influenza-Modeling-Workshop-26
 pip install -r requirements.txt
 ```
 
