@@ -1,0 +1,13 @@
+# Neural ODE Influenza Forecaster — Dependencies
+# Install with: pip install -r requirements.txt
+
+# Core deep learning
+torch>=2.0.0
+torchdiffeq>=0.2.3
+
+# Data handling
+numpy>=1.24.0
+pandas>=2.0.0
+
+# Visualization
+matplotlib>=3.7.0
