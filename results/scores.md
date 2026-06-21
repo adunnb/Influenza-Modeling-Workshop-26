@@ -11,24 +11,37 @@ Competition: [2026 Modeling the Invisible Workshop, Challenge 1](https://sites.g
 Each round is scored as:
 
 ```
-score_round = 0.8 × RMSE_Hosp + 0.2 × RMSE_Rt
+round_score = 0.8 × hosp_nrmse + 0.2 × r0_rmse
 ```
 
-The final leaderboard score is the sum of `score_round` across all four rounds.
+The challenge score is the average of `round_score` across all four rounds.
 
 ---
 
 ## Per-round scores
 
-| Round | Training weeks | Forecast weeks | RMSE_Hosp | RMSE_Rt | Round score |
-|-------|---------------|----------------|-----------|---------|-------------|
-| 1     | 1–10          | 11–15          |           |         |             |
-| 2     | 1–15          | 16–20          |           |         |             |
-| 3     | 1–20          | 21–25          |           |         |             |
-| 4     | 1–25          | 26–30          |           |         |             |
-| **Total** |           |                |           |         |             |
+| Round | Training weeks | Forecast weeks | hosp_rmse | hosp_nrmse | r0_rmse  | round_score |
+|-------|-----------------|------------------|-----------|------------|----------|-------------|
+| 1     | 1–10            | 11–15            | 0.400000  | 0.206186   | 0.047958 | 0.174540    |
+| 2     | 1–15            | 16–20            | 1.407835  | 0.368543   | 0.137113 | 0.322257    |
+| 3     | 1–20            | 21–25            | 4.064234  | 1.092536   | 0.329727 | 0.939974    |
+| 4     | 1–25            | 26–30            | 0.044721  | 0.072131   | 0.522494 | 0.162204    |
+| **Total (avg)** |       |                  |           |            |          | **0.399744**|
 
-*Fill in per-round scores from the official results page.*
+---
+
+## Final leaderboard — Challenge 1
+
+| Rank | Team    | Challenge score |
+|------|---------|------------------|
+| 1    | Team-05 | 0.386849         |
+| 2    | **Team-03** | **0.399744** |
+| 3    | Team-07 | 0.460731         |
+| 4    | Team-09 | 0.497027         |
+| 5    | Team-02 | 0.515890         |
+| 6    | Team-01 | 0.526690         |
+| 7    | Team-08 | 0.637971         |
+| 8    | Team-06 | 0.730898         |
 
 ---
 
