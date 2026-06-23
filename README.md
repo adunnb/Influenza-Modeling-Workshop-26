@@ -116,6 +116,27 @@ Full competition leaderboards and team prediction plots are available on the
 
 ---
 
+## Limitations
+
+Retraining happens from scratch every round: four full ensembles, no
+fine-tuning between rounds, because fine-tuning risked forgetting the
+early-season trend once a new release contradicted it (see `02_model.ipynb`).
+Everything ran on CPU; no notebook here uses a GPU. That made the offline
+validation loop slow enough that we tuned hyperparameters mostly by hand
+rather than through any systematic search.
+
+The model also never saw anything beyond the current season. Round 1 trains
+on 10 points and has to forecast 5 weeks out with no prior knowledge of what
+an influenza season typically looks like. `influenzaA2017.csv` and
+`influenzaA2018.csv` sit in `data/raw/` and get plotted in `01_data.ipynb`,
+but neither ever touches training; they're there for comparison, not as
+training data. Pretraining on, or otherwise conditioning the model on, public
+CDC influenza surveillance data across more seasons would give it some sense
+of epidemic shape before round 1 even starts, instead of asking it to learn
+that from ten points.
+
+---
+
 ## Dependencies
 
 See `requirements.txt`. Key packages:
