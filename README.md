@@ -3,6 +3,11 @@
 **2nd of 8 teams, Challenge 1 — 2026 Modeling the Invisible Workshop (Team 3).
 Best score of all teams in the final round.**
 
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="figures/leaderboard-dark.png">
+  <img src="figures/leaderboard-light.png" alt="Challenge 1 final leaderboard: Team 3 placed 2nd of 8 with a score of 0.400; first place scored 0.387" width="560">
+</picture>
+
 This repository contains our forecasting model and results for Challenge 1 of the
 [2026 Modeling the Invisible Workshop](https://sites.google.com/iu.edu/modelingtheinvisibleworkshop/home)
 hosted at Georgia State University.
@@ -82,8 +87,14 @@ See the notebooks in order for the full walkthrough.
 │   ├── round-03-submission.csv
 │   └── round-04-submission.csv
 │
+├── figures/                        # README figures (built by scripts/make_figures.py)
+│
 ├── results/
-│   └── scores.md                   # RMSE scores per round and leaderboard result
+│   ├── scores.md                   # Per-round scores and leaderboard
+│   └── leaderboard.csv             # Official Challenge 1 leaderboard
+│
+├── scripts/
+│   └── make_figures.py             # Builds the figures from the data and submissions
 │
 ├── requirements.txt
 └── README.md
@@ -123,6 +134,16 @@ Release and truth files are taken from the workshop's
   weeks 26–30 matched the truth exactly in four of five weeks.
 - **Most accurate R(t) forecast of all teams in round 1**, made from only ten weeks
   of early-growth data.
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="figures/forecasts-dark.png">
+  <img src="figures/forecasts-light.png" alt="Submitted 5-week forecasts for each round plotted against the true season" width="760">
+</picture>
+
+Each blue segment is the 5-week forecast submitted at that round, plotted against the
+true season in gray. The round 4 forecast was the most accurate of all eight teams.
+Round 3's cutoff fell one week before the season's peak at week 21, while the data
+was still rising steeply.
 
 See [`results/scores.md`](results/scores.md) for per-round scores.
 
