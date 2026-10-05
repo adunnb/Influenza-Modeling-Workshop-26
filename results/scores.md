@@ -47,13 +47,18 @@ The challenge score is the average of `round_score` across all four rounds.
 
 ## Notes
 
-- **Round 1** was the hardest: only 10 weeks of training data, during the early
-  exponential growth phase, with no indication yet whether the season would be
-  unimodal or bimodal.
-- **Round 3** data revealed the second peak, which significantly helped the Neural
-  ODE learn the two-strain dynamics implicitly.
-- R(t) estimation was derived from the latent state trajectory rather than fit
-  directly, which contributed to the RMSE_Rt component.
+- **Round 4 was our strongest round and the best round score of any team.** Our
+  hospitalization forecast for weeks 26–30 was the most accurate of all eight teams
+  (RMSE 0.045 per 100k), matching the truth exactly in four of the five weeks.
+- **Round 1 produced the most accurate R(t) forecast of any team**, from only ten
+  weeks of early exponential-growth data.
+- **Round 3 was the hardest.** The data through week 20 was still rising steeply,
+  and the season peaked at week 21, immediately after the cutoff, so the forecast
+  extended the rise past the turn.
+- R(t) was derived from the forecast incidence curve rather than fit directly.
+
+Per-round scores and the leaderboard are from the workshop's
+[official scoring files](https://github.com/jpsluka/modeling-the-invisible-workshop/tree/main/scoring/challenge-01).
 
 ---
 
