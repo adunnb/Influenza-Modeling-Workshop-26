@@ -1,4 +1,4 @@
-# Challenge 1 Results — Team 3
+# Challenge 1 Results: Team 3
 
 **Final standing: 2nd place**
 
@@ -30,7 +30,7 @@ The challenge score is the average of `round_score` across all four rounds.
 
 ---
 
-## Final leaderboard — Challenge 1
+## Final leaderboard: Challenge 1
 
 | Rank | Team    | Challenge score |
 |------|---------|------------------|

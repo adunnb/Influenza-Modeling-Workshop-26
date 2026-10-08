@@ -1,4 +1,4 @@
-# Neural ODE Influenza Forecaster — Dependencies
+# Neural ODE Influenza Forecaster: dependencies
 # Install with: pip install -r requirements.txt
 
 # Core deep learning

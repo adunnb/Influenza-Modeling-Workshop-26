@@ -1,6 +1,6 @@
 # Neural ODE Influenza Forecaster
 
-**2nd of 8 teams, Challenge 1 — 2026 Modeling the Invisible Workshop (Team 3).
+**2nd of 8 teams, Challenge 1, 2026 Modeling the Invisible Workshop (Team 3).
 Best score of all teams in the final round.**
 
 <picture>
@@ -112,9 +112,9 @@ pip install -r requirements.txt
 
 Then run the notebooks in order:
 
-1. `notebooks/01_data.ipynb` — understand the data structure and competition setup
-2. `notebooks/02_model.ipynb` — train and evaluate the Neural ODE offline
-3. `notebooks/03_competition_workflow.ipynb` — replay the live submission workflow
+1. `notebooks/01_data.ipynb`: understand the data structure and competition setup
+2. `notebooks/02_model.ipynb`: train and evaluate the Neural ODE offline
+3. `notebooks/03_competition_workflow.ipynb`: replay the live submission workflow
 
 Notebook 3 retrains the ensemble from scratch, so on different hardware or library
 versions its forecasts can differ slightly from the submitted ones in `predictions/`.
@@ -177,10 +177,10 @@ that from ten points.
 
 See `requirements.txt`. Key packages:
 
-- `torch` — Neural ODE backbone
-- `torchdiffeq` — ODE solvers and adjoint method
-- `numpy`, `pandas` — data handling
-- `matplotlib` — visualization
+- `torch`: Neural ODE backbone
+- `torchdiffeq`: ODE solvers and adjoint method
+- `numpy`, `pandas`: data handling
+- `matplotlib`: visualization
 
 ---
 
